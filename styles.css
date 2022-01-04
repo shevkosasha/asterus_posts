@@ -1,0 +1,117 @@
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    box-sizing: border-box;
+  }
+
+  .posts {
+    max-width: 920px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;      
+  }
+
+  figure {
+    text-align: center;
+    margin: .5rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    background-color: aqua;
+  }
+
+  .post {
+    font-size: large;
+  }
+
+  .comments-btn {
+    display: flex;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .comments-btn:active,
+  .comments-btn:hover
+  {
+    background-color: rgb(167, 132, 132);
+  }
+  
+
+  .comments-btn.active{
+    background-color: yellow;
+    color: black;
+  }
+  .comments-btn.active:active,
+  .comments-btn.active:hover
+  {
+    background-color: rgb(163, 163, 9);
+    color: black;
+  }
+
+  figure:last-of-type {
+    border: none;
+  }
+
+  figcaption {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    text-align: left;
+    margin: .6rem;
+  }
+
+  span {
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .comments {
+    width: 80%;
+    display: inline-block;
+    justify-content: end;
+  }
+
+  .comment {
+    background-color:rgb(220, 234, 240);
+    border:skyblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    
+  }
+  
+  .alert{
+      color: red;
+  }
+
+  #loader{
+      animation-name: rotate;
+      animation-duration:10s;
+      display: block;
+      margin: 5px auto;
+  }
+
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      25% {
+          transform: rotate(360deg);
+      }
+      50% {
+          transform: rotate(0deg);
+      }
+      75% {
+          transform: rotate(360deg);
+      }
+      100% {
+          transform: rotate(0deg);
+      }
+  }
+  
